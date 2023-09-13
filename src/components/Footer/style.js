@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const FooterBox = styled.div`
   background: var(--black, #191919);
   padding: 50px 0;
-  margin-top: 50px;
-
 
   .footer-name {
     font-family: Open Sans;

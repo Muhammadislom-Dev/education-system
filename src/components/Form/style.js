@@ -9,7 +9,7 @@ export const FormBox = styled.div`
     color: #fff;
     text-align: center;
     font-family: Open Sans;
-    font-size: 24px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: 130%;
@@ -22,6 +22,7 @@ export const FormBox = styled.div`
   }
   .form-list {
     border-radius: 5px;
+    gap: 15px;
     background: #edf3fb;
     padding: 24px;
     width: 500px;
@@ -39,7 +40,7 @@ export const FormBox = styled.div`
     margin: 8px 0;
 
     &:focus {
-      border: 3px solid #00bafc;
+      border: 2px solid #00bafc;
     }
 
     &::placeholder {

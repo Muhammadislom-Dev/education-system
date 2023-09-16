@@ -1,7 +1,25 @@
 import React from "react";
 import { FormBox } from "./style";
+import { useForm } from "react-hook-form";
+import InputMask from "../forms/InputMask";
+import Input from "../forms/Input";
+import Textarea from "../forms/Textarea";
+import { useTranslation } from "react-i18next";
+
+const values = {
+  phone: "",
+  name: "",
+};
 
 function Form() {
+  const { t } = useTranslation();
+  const {
+    handleSubmit,
+    control,
+    formState: { errors },
+    watch,
+    // setValue,
+  } = useForm(values);
   return (
     <FormBox>
       <div className="container">
@@ -12,24 +30,47 @@ function Form() {
           mattis eros at sem pulvinar
         </p>
         <form action="" className="form-list">
-          <input
-            type="text"
-            placeholder="Ismingiz"
-            required
-            className="form-input"
+          <Input
+            name="name"
+            control={control}
+            errors={errors}
+            labelProps={{
+              label: "Ф.И.Ш",
+              labelStyleName: "defaultLabel",
+            }}
+            inputStyleName="formInput"
           />
-          <input
-            type="tell"
-            placeholder="Telefon raqamingiz"
-            required
-            className="form-input"
+          <InputMask
+            name="phone"
+            control={control}
+            errors={errors}
+            showError
+            maskProps={{
+              mask: "+\\9\\98\\ 99 999-99-99",
+              placeholder: "+998 (__) ___-__-__",
+            }}
+            inputStyleName="formInput"
+            labelProps={{
+              label: "Номер телефона",
+              labelStyleName: "defaultLabel",
+            }}
           />
-          <textarea
-            name=""
-            placeholder="Sizning xabaringiz"
-            id=""
-            cols="30"
-            rows="10"></textarea>
+          <Textarea
+            name="description"
+            control={control}
+            errors={errors}
+            inputStyleName="announceInput"
+            showError
+            textareaProps={{
+              placeholder: t("Your Message"),
+              minHeight: "145px",
+              background: "#fcfdff !important",
+              border: "1px solid #f0f4fa",
+            }}
+            labelProps={{
+              label: t("Your Message"),
+            }}
+          />
           <button type="submit" className="form-button">
             Yuborish
           </button>

@@ -22,7 +22,7 @@ export const FormBox = styled.div`
   }
   .form-list {
     border-radius: 5px;
-    background: #fff;
+    background: #edf3fb;
     padding: 24px;
     width: 500px;
     display: flex;

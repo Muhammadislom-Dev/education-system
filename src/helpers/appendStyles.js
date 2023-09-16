@@ -61,7 +61,7 @@ const announceInput = {
   borderRadius: "6px",
   transition: ".1s all",
   _focus: {
-    outline: "2px solid #409eff",
+    outline: "1px solid #409eff",
     boxShadow: "none !important",
     border: "none",
   },

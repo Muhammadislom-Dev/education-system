@@ -19,7 +19,7 @@ function Form() {
             className="form-input"
           />
           <input
-            type="tel"
+            type="tell"
             placeholder="Telefon raqamingiz"
             required
             className="form-input"

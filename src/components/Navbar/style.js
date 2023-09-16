@@ -8,6 +8,15 @@ export const NavbarBox = styled.div`
   z-index: 100;
   padding: 8px 0;
 
+  .navbar-name {
+    color: #000;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: sans-serif;
+  }
+
   .navbar-list {
     display: flex;
     align-items: center;
@@ -19,6 +28,7 @@ export const NavbarBox = styled.div`
     justify-content: end;
     align-items: center;
     margin: 8px 0;
+    gap: 15px;
   }
 
   .navbar-link {
@@ -32,7 +42,7 @@ export const NavbarBox = styled.div`
     margin-right: 25px;
 
     &:hover {
-     color: #00bafc;
+      color: #00bafc;
     }
   }
   .navbar-links {

@@ -1,3 +1,23 @@
+:root {
+  --primary: #00bafc;
+  --text: #05101d;
+  --body: #f4f8fc;
+  --sub-text: #9b9fa5;
+  --border: #e6e7e8;
+  --border2: #ced2da;
+  --border-hover: #bad5f9;
+  --secondary: #66718e;
+  --headerIcon: #506277;
+  --pink: #f71b9f;
+  --icon: #b9becb;
+  --softgreen: #a8dfc8;
+  --blue: #4fb2ff;
+  --gray: #9b9fa5;
+  --footer-text: #222b38;
+  --white: #fff;
+  --footer-bg: #0f172a;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -37,6 +57,10 @@ p {
   line-height: 24px;
 }
 
+:where(.css-dev-only-do-not-override-i0102m).ant-modal .ant-modal-content {
+  padding: 0 !important;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -57,4 +81,28 @@ input::-webkit-inner-spin-button {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #00bafc;
+}
+
+.ant-modal-mask {
+  background-color: rgba(5, 16, 29, 0.8) !important;
+}
+.ant-modal .ant-modal-close {
+  top: -25px;
+  right: -35px;
+  color: #fff;
+  transform: scale(1.8);
+}
+.ant-modal .ant-modal-close:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  color: #05101d;
+  font-weight: 600;
+}
+
+:where(.css-dev-only-do-not-override-1me4733).ant-collapse {
+  margin: 15px 0;
+  background: #f5f8fc;
 }

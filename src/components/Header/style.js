@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderBox = styled.div`
-  padding-top: 160px;
+  padding-top: 130px;
 
   .container {
     display: flex;

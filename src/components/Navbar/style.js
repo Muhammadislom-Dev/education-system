@@ -39,7 +39,6 @@ export const NavbarBox = styled.div`
     font-size: 15px;
     line-height: 24px;
     transition: 0.1s;
-    margin-right: 25px;
 
     &:hover {
       color: #00bafc;
